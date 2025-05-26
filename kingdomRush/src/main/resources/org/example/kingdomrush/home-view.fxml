@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="700.0" maxWidth="1300.0" minHeight="700.0" minWidth="1300.0" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.kingdomrush.view.HomeView">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1300.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../picture/home2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="station4" fitHeight="46.0" fitWidth="57.0" layoutX="907.0" layoutY="294.0" onMouseClicked="#station4Clicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/skull.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="station1" fitHeight="46.0" fitWidth="57.0" layoutX="465.0" layoutY="88.0" onMouseClicked="#station1Clicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/stage.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="station2" fitHeight="46.0" fitWidth="57.0" layoutX="202.0" layoutY="224.0" onMouseClicked="#station2Clicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/skull.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="station3" fitHeight="46.0" fitWidth="57.0" layoutX="511.0" layoutY="469.0" onMouseClicked="#station3Clicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/skull.png" />
+         </image>
+      </ImageView>
+      <Line fx:id="line2" endX="193.0" endY="-57.0" layoutX="273.0" layoutY="168.0" startX="-25.0" startY="74.5" stroke="#fafafad6" strokeMiterLimit="0.0" strokeWidth="5.0" style="-fx-stroke-dash-array: 5 15;" />
+      <Line fx:id="line3" endX="-123.0" endY="-34.5" layoutX="382.0" layoutY="355.0" startX="130.5" startY="132.5" stroke="#ffffffd6" strokeMiterLimit="0.0" strokeWidth="5.0" style="-fx-stroke-dash-array: 5 15;" />
+      <Line fx:id="line4" endX="316.5" endY="-44.5" layoutX="584.0" layoutY="373.0" startX="70.0" startY="138.5" stroke="#ffffffd6" strokeMiterLimit="0.0" strokeWidth="5.0" style="-fx-stroke-dash-array: 5 15;" />
+      <Rectangle arcHeight="40.0" arcWidth="40.0" height="66.0" layoutX="6.0" layoutY="594.0" opacity="0.57" stroke="#bababa4b" strokeType="INSIDE" strokeWidth="5.0" width="356.0" />
+      <ImageView fitHeight="66.0" fitWidth="68.0" layoutX="288.0" layoutY="593.0" onMouseClicked="#bagClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/bag.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="160.0" layoutY="603.0" onMouseClicked="#settingClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/setting.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="22.0" arcWidth="22.0" fill="#000000bb" height="20.0" layoutX="1073.0" layoutY="25.0" opacity="0.78" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="123.0" />
+      <ImageView fitHeight="28.0" fitWidth="30.0" layoutX="1060.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/gem.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="levelImage" fitHeight="59.0" fitWidth="65.0" layoutX="1218.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/one.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="numberGem" fill="#ffe9c6" layoutX="1086.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12222" textAlignment="CENTER" wrappingWidth="102.8203125">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="39.0" fitWidth="53.0" layoutX="40.0" layoutY="607.0" onMouseClicked="#logoutClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/logout.png" />
+         </image>
+      </ImageView>
+      <Line endX="124.5" endY="-109.0" layoutX="283.0" layoutY="178.0" startX="-174.0" startY="-142.0" stroke="#ff2b00e3" strokeMiterLimit="0.0" strokeWidth="5.0" style="-fx-stroke-dash-array: 5 15;" />
+   </children>
+</AnchorPane>

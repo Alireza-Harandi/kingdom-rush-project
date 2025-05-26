@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="700.0" maxWidth="1300.0" minHeight="700.0" minWidth="1300.0" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.kingdomrush.view.Map1View">
+   <children>
+      <ImageView fx:id="mainImage" fitHeight="700.0" fitWidth="1300.0" mouseTransparent="true" pickOnBounds="true">
+         <image>
+            <Image url="@../../../picture/map1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="252.0" fitWidth="439.0" layoutX="-26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/bar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1093.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/exitMap.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="healthNumber" fill="#fff1d6" layoutX="92.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+         <font>
+            <Font name="Freestyle Script" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="coinNumber" fill="#fdecc9" layoutX="154.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1000">
+         <font>
+            <Font name="Freestyle Script" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="#fff1d6" layoutX="266.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="wave">
+         <font>
+            <Font name="Freestyle Script" size="33.0" />
+         </font>
+      </Text>
+      <Text fx:id="waveNumber" fill="#fdecc9" layoutX="310.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0/2">
+         <font>
+            <Font name="Freestyle Script" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="#fff1d6" layoutX="1178.0" layoutY="37.0" onMouseClicked="#exitMapClicked" strokeType="OUTSIDE" strokeWidth="0.0" text="×" textAlignment="CENTER" wrappingWidth="39.20361328125">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="74.0" fitWidth="670.0" layoutX="2.0" layoutY="616.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/leftBar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="670.0" layoutX="627.0" layoutY="611.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/rightBar.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="littleBoy" arcHeight="13.0" arcWidth="13.0" fill="GREY" height="38.0" layoutX="145.0" layoutY="639.0" stroke="#cecece" strokeType="OUTSIDE" strokeWidth="0.0" width="38.0" />
+      <Rectangle fx:id="freeze" arcHeight="13.0" arcWidth="13.0" fill="GREY" height="38.0" layoutX="199.0" layoutY="639.0" stroke="#cecece" strokeType="OUTSIDE" strokeWidth="0.0" width="38.0" />
+      <Rectangle fx:id="health" arcHeight="13.0" arcWidth="13.0" fill="GREY" height="41.0" layoutX="1045.0" layoutY="635.0" stroke="#cecece" strokeType="OUTSIDE" strokeWidth="0.0" width="41.0" />
+      <Rectangle fx:id="coin" arcHeight="13.0" arcWidth="13.0" fill="GREY" height="41.0" layoutX="1103.0" layoutY="635.0" stroke="#cecece" strokeType="OUTSIDE" strokeWidth="0.0" width="41.0" />
+      <Rectangle arcHeight="4.0" arcWidth="4.0" fill="#565656" height="15.0" layoutX="157.0" layoutY="668.0" stroke="#1b1b1b" strokeType="INSIDE" width="15.0" />
+      <Rectangle arcHeight="4.0" arcWidth="4.0" fill="#565656" height="15.0" layoutX="210.0" layoutY="668.0" stroke="#1b1b1b" strokeType="INSIDE" width="15.0" />
+      <Rectangle arcHeight="4.0" arcWidth="4.0" fill="#565656" height="15.0" layoutX="1058.0" layoutY="668.0" stroke="#1b1b1b" strokeType="INSIDE" width="15.0" />
+      <Rectangle arcHeight="4.0" arcWidth="4.0" fill="#565656" height="15.0" layoutX="1116.0" layoutY="668.0" stroke="#1b1b1b" strokeType="INSIDE" width="15.0" />
+      <Text fx:id="numberSpellLittleBoy" fill="#f8f8f8" layoutX="159.0" layoutY="679.0" strokeType="OUTSIDE" strokeWidth="0.0" text="23">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="numberSpellFreeze" fill="#f8f8f8" layoutX="212.0" layoutY="679.0" strokeType="OUTSIDE" strokeWidth="0.0" text="23">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="numberSpellHealth" fill="#f8f8f8" layoutX="1060.0" layoutY="679.0" strokeType="OUTSIDE" strokeWidth="0.0" text="23">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Text fx:id="numberSpellCoin" fill="#f8f8f8" layoutX="1118.0" layoutY="679.0" strokeType="OUTSIDE" strokeWidth="0.0" text="23">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="tower1Image" fitHeight="83.0" fitWidth="108.0" layoutX="478.0" layoutY="149.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/slot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tower2Image" fitHeight="83.0" fitWidth="108.0" layoutX="358.0" layoutY="209.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/slot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tower3Image" fitHeight="83.0" fitWidth="108.0" layoutX="488.0" layoutY="329.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/slot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tower4Image" fitHeight="83.0" fitWidth="108.0" layoutX="488.0" layoutY="399.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/slot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tower5Image" fitHeight="83.0" fitWidth="108.0" layoutX="628.0" layoutY="396.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/slot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tower6Image" fitHeight="83.0" fitWidth="108.0" layoutX="908.0" layoutY="499.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/slot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="start" fitHeight="50.0" fitWidth="66.0" layoutX="593.0" layoutY="641.0" onMouseClicked="#startClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/start.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="resultRectangle" arcHeight="5.0" arcWidth="5.0" fill="#363636cb" height="522.0" layoutX="167.0" layoutY="83.0" mouseTransparent="true" stroke="BLACK" strokeType="INSIDE" visible="false" width="925.0" />
+      <Text fx:id="resultText" fill="#f56e56" layoutX="246.0" layoutY="310.0" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="GAME OVER" textAlignment="CENTER" visible="false" wrappingWidth="774.859375">
+         <font>
+            <Font name="Freestyle Script" size="200.0" />
+         </font>
+      </Text>
+      <Button fx:id="resultButton" focusTraversable="false" layoutX="488.0" layoutY="405.0" mnemonicParsing="false" mouseTransparent="true" onMouseClicked="#resultButtonClicked" prefHeight="91.0" prefWidth="273.0" style="-fx-background-color: #4b4a4a;" text="GO TO HOME" textAlignment="CENTER" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Freestyle Script" size="44.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
